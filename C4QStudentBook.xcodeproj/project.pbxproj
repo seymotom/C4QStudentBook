@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE2189AC1DDF96CB0063D4C6 /* WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2189AB1DDF96CB0063D4C6 /* WalkThroughViewController.swift */; };
+		DE2189AF1DDFA1750063D4C6 /* WalkThroughCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2189AE1DDFA1750063D4C6 /* WalkThroughCell.swift */; };
+		DE2189B11DDFA1A50063D4C6 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2189B01DDFA1A50063D4C6 /* BaseCell.swift */; };
+		DE2189B31DDFA1EF0063D4C6 /* LoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2189B21DDFA1EF0063D4C6 /* LoginCell.swift */; };
 		DE5A0E571D9EE52600AE2979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5A0E561D9EE52600AE2979 /* AppDelegate.swift */; };
 		DE5A0E5C1D9EE52600AE2979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5A0E5A1D9EE52600AE2979 /* Main.storyboard */; };
 		DE5A0E5E1D9EE52600AE2979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5A0E5D1D9EE52600AE2979 /* Assets.xcassets */; };
 		DE5A0E611D9EE52600AE2979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5A0E5F1D9EE52600AE2979 /* LaunchScreen.storyboard */; };
 		DE5A0E691D9EE61300AE2979 /* StudentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5A0E681D9EE61300AE2979 /* StudentsTableViewController.swift */; };
 		DE5A0E6B1D9EEB6300AE2979 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5A0E6A1D9EEB6300AE2979 /* StudentTableViewCell.swift */; };
+		DEB718051DDFA7E8009F7BE2 /* WalkThrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB718041DDFA7E8009F7BE2 /* WalkThrough.swift */; };
 		DEDC04381D9EEF510007FE26 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC04371D9EEF510007FE26 /* Data.swift */; };
 		DEDC043A1D9EF0520007FE26 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC04391D9EF0520007FE26 /* Student.swift */; };
 		DEDC043C1D9EF0C00007FE26 /* Bio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC043B1D9EF0C00007FE26 /* Bio.swift */; };
 		DEDC043F1D9F0C570007FE26 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC043E1D9F0C570007FE26 /* DetailViewController.swift */; };
+		DEDC04831DA5B6B90007FE26 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC04821DA5B6B90007FE26 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE2189AB1DDF96CB0063D4C6 /* WalkThroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkThroughViewController.swift; sourceTree = "<group>"; };
+		DE2189AE1DDFA1750063D4C6 /* WalkThroughCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkThroughCell.swift; sourceTree = "<group>"; };
+		DE2189B01DDFA1A50063D4C6 /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		DE2189B21DDFA1EF0063D4C6 /* LoginCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCell.swift; sourceTree = "<group>"; };
 		DE5A0E531D9EE52600AE2979 /* C4QStudentBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C4QStudentBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5A0E561D9EE52600AE2979 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE5A0E5B1D9EE52600AE2979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,10 +38,12 @@
 		DE5A0E621D9EE52600AE2979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE5A0E681D9EE61300AE2979 /* StudentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsTableViewController.swift; sourceTree = "<group>"; };
 		DE5A0E6A1D9EEB6300AE2979 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		DEB718041DDFA7E8009F7BE2 /* WalkThrough.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkThrough.swift; sourceTree = "<group>"; };
 		DEDC04371D9EEF510007FE26 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		DEDC04391D9EF0520007FE26 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		DEDC043B1D9EF0C00007FE26 /* Bio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bio.swift; sourceTree = "<group>"; };
 		DEDC043E1D9F0C570007FE26 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DEDC04821DA5B6B90007FE26 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,10 +57,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE2189A81DDF952E0063D4C6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE5A0E681D9EE61300AE2979 /* StudentsTableViewController.swift */,
+				DEDC043E1D9F0C570007FE26 /* DetailViewController.swift */,
+				DEDC04821DA5B6B90007FE26 /* LoginViewController.swift */,
+				DE5A0E6A1D9EEB6300AE2979 /* StudentTableViewCell.swift */,
+				DE2189AB1DDF96CB0063D4C6 /* WalkThroughViewController.swift */,
+				DE2189AE1DDFA1750063D4C6 /* WalkThroughCell.swift */,
+				DE2189B21DDFA1EF0063D4C6 /* LoginCell.swift */,
+				DE2189B01DDFA1A50063D4C6 /* BaseCell.swift */,
+				DE2189AD1DDFA1550063D4C6 /* New Group */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DE2189A91DDF955E0063D4C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE5A0E561D9EE52600AE2979 /* AppDelegate.swift */,
+				DEDC04371D9EEF510007FE26 /* Data.swift */,
+				DE5A0E5D1D9EE52600AE2979 /* Assets.xcassets */,
+				DE5A0E621D9EE52600AE2979 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = C4QStudentBook;
+			sourceTree = "<group>";
+		};
+		DE2189AA1DDF957A0063D4C6 /* UI Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				DE5A0E5F1D9EE52600AE2979 /* LaunchScreen.storyboard */,
+				DE5A0E5A1D9EE52600AE2979 /* Main.storyboard */,
+			);
+			name = "UI Stuff";
+			sourceTree = "<group>";
+		};
+		DE2189AD1DDFA1550063D4C6 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		DE5A0E4A1D9EE52600AE2979 = {
 			isa = PBXGroup;
 			children = (
 				DE5A0E551D9EE52600AE2979 /* C4QStudentBook */,
+				DE2189A91DDF955E0063D4C6 /* Supporting Files */,
 				DE5A0E541D9EE52600AE2979 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,14 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				DEDC043D1D9EF71C0007FE26 /* Model */,
-				DE5A0E681D9EE61300AE2979 /* StudentsTableViewController.swift */,
-				DEDC043E1D9F0C570007FE26 /* DetailViewController.swift */,
-				DE5A0E6A1D9EEB6300AE2979 /* StudentTableViewCell.swift */,
-				DE5A0E561D9EE52600AE2979 /* AppDelegate.swift */,
-				DE5A0E5A1D9EE52600AE2979 /* Main.storyboard */,
-				DE5A0E5D1D9EE52600AE2979 /* Assets.xcassets */,
-				DE5A0E5F1D9EE52600AE2979 /* LaunchScreen.storyboard */,
-				DE5A0E621D9EE52600AE2979 /* Info.plist */,
+				DE2189A81DDF952E0063D4C6 /* View Controllers */,
+				DE2189AA1DDF957A0063D4C6 /* UI Stuff */,
 			);
 			path = C4QStudentBook;
 			sourceTree = "<group>";
@@ -80,9 +131,9 @@
 		DEDC043D1D9EF71C0007FE26 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DEDC04371D9EEF510007FE26 /* Data.swift */,
 				DEDC04391D9EF0520007FE26 /* Student.swift */,
 				DEDC043B1D9EF0C00007FE26 /* Bio.swift */,
+				DEB718041DDFA7E8009F7BE2 /* WalkThrough.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -159,13 +210,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2189AF1DDFA1750063D4C6 /* WalkThroughCell.swift in Sources */,
+				DE2189AC1DDF96CB0063D4C6 /* WalkThroughViewController.swift in Sources */,
 				DE5A0E691D9EE61300AE2979 /* StudentsTableViewController.swift in Sources */,
 				DE5A0E571D9EE52600AE2979 /* AppDelegate.swift in Sources */,
 				DE5A0E6B1D9EEB6300AE2979 /* StudentTableViewCell.swift in Sources */,
 				DEDC043A1D9EF0520007FE26 /* Student.swift in Sources */,
+				DEDC04831DA5B6B90007FE26 /* LoginViewController.swift in Sources */,
+				DE2189B11DDFA1A50063D4C6 /* BaseCell.swift in Sources */,
 				DEDC043C1D9EF0C00007FE26 /* Bio.swift in Sources */,
 				DEDC04381D9EEF510007FE26 /* Data.swift in Sources */,
 				DEDC043F1D9F0C570007FE26 /* DetailViewController.swift in Sources */,
+				DEB718051DDFA7E8009F7BE2 /* WalkThrough.swift in Sources */,
+				DE2189B31DDFA1EF0063D4C6 /* LoginCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

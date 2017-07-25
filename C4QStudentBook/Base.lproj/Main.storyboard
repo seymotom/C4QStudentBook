@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0kE-n4-bzB">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -17,10 +17,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="studentTVCID" rowHeight="120" id="L0W-ED-jKN" customClass="StudentTableViewCell" customModule="C4QStudentBook" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L0W-ED-jKN" id="j2O-WI-ga4">
-                                    <frame key="frameInset" width="375" height="119.5"/>
+                                    <frame key="frameInset" width="375" height="119"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pKE-z2-IIH">
@@ -68,7 +68,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAg-1b-0Xz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1783.2" y="-8.5457271364317844"/>
+            <point key="canvasLocation" x="2722.4000000000001" y="-8.5457271364317844"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="q4x-VI-XMj">
@@ -152,12 +152,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AHB-4f-5kv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2708" y="-7.6461769115442282"/>
+            <point key="canvasLocation" x="3647.1999999999998" y="-7.6461769115442282"/>
         </scene>
-        <!--View Controller-->
+        <!--Walk Through View Controller-->
+        <scene sceneID="bQv-ew-ea8">
+            <objects>
+                <viewController id="0kE-n4-bzB" customClass="WalkThroughViewController" customModule="C4QStudentBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hj1-pG-eLa"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZUy-at-dcU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tCu-2Q-iXM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5IN-Vh-4Y9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-145" y="-9"/>
+        </scene>
+        <!--Login View Controller-->
         <scene sceneID="tMM-mF-ot3">
             <objects>
-                <viewController id="zSQ-Dc-gby" sceneMemberID="viewController">
+                <viewController id="zSQ-Dc-gby" customClass="LoginViewController" customModule="C4QStudentBook" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wmI-C5-ULB"/>
                         <viewControllerLayoutGuide type="bottom" id="YeK-I2-WUD"/>
@@ -165,31 +183,76 @@
                     <view key="view" contentMode="scaleToFill" id="Q6x-iD-tMb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaS-pw-jVL">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="i85-Pt-m83"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="zSQ-Dc-gby" eventType="touchUpInside" id="FDV-da-tk7"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="annie.mmt@gmail.com" borderStyle="roundedRect" placeholder="email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yMM-n9-2aG">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="cGA-DA-KPX"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3203" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CHv-Fa-7qv">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Lud-qF-Gwg"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yMM-n9-2aG" firstAttribute="centerX" secondItem="Q6x-iD-tMb" secondAttribute="centerX" id="DMX-w6-wKj"/>
+                            <constraint firstItem="CHv-Fa-7qv" firstAttribute="centerX" secondItem="Q6x-iD-tMb" secondAttribute="centerX" id="GUb-Y5-RiW"/>
+                            <constraint firstItem="CHv-Fa-7qv" firstAttribute="top" secondItem="yMM-n9-2aG" secondAttribute="bottom" constant="10" id="Gip-5C-snq"/>
+                            <constraint firstItem="yMM-n9-2aG" firstAttribute="top" secondItem="wmI-C5-ULB" secondAttribute="bottom" constant="70" id="Y8h-78-e73"/>
+                            <constraint firstItem="VaS-pw-jVL" firstAttribute="top" secondItem="CHv-Fa-7qv" secondAttribute="bottom" constant="20" id="k3P-mW-94E"/>
+                            <constraint firstItem="VaS-pw-jVL" firstAttribute="centerX" secondItem="Q6x-iD-tMb" secondAttribute="centerX" id="qZe-CM-Yii"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qvQ-G9-XGk"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="yMM-n9-2aG" id="o2F-4y-gLO"/>
+                        <outlet property="loginButton" destination="VaS-pw-jVL" id="JNW-Ze-urS"/>
+                        <outlet property="passwordTextField" destination="CHv-Fa-7qv" id="bVf-Yy-XQe"/>
+                        <segue destination="b85-hr-gGs" kind="show" identifier="loginToTableViewSegue" id="vcp-x8-B3e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uq1-ia-UrS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847" y="-9"/>
+            <point key="canvasLocation" x="845.60000000000002" y="-9.4452773613193415"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="T6U-gX-PfY">
+        <scene sceneID="ZFo-JY-Elo">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H07-na-dO4" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b85-hr-gGs" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yP1-cj-JGO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UNC-GV-lqD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="zSQ-Dc-gby" kind="relationship" relationship="rootViewController" id="cod-ID-Pke"/>
+                        <segue destination="fGJ-HN-gIm" kind="relationship" relationship="rootViewController" id="EuG-Ly-e5e"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FYX-Ib-O09" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UcZ-c9-Ew8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="93.599999999999994" y="-8.5457271364317844"/>
+            <point key="canvasLocation" x="1783.2" y="-8.5457271364317844"/>
         </scene>
     </scenes>
     <resources>
